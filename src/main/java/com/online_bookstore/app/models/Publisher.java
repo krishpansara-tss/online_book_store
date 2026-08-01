@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -16,6 +17,6 @@ public class Publisher {
     private Long publisherId;
     private String name;
 
-    @OneToMany(mappedBy = "book_id")
-    private List<Book> book;
+    @OneToMany(mappedBy = "publisher")
+    private List<Book> books = new ArrayList<>();
 }

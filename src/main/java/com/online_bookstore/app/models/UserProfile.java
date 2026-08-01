@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @RequiredArgsConstructor
 @Data
@@ -17,5 +17,9 @@ public class UserProfile {
     private Long profileId;
     private String address;
     private String phoneNumber;
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+    private User user;
 }

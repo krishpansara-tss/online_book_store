@@ -16,6 +16,10 @@ public class OrderItem {
     private Double priceAtPurchase;
 
     @ManyToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
+    @ManyToOne
     @JoinColumn(name = "book_id")
     private Book book;
 }

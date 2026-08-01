@@ -3,8 +3,10 @@ package com.online_bookstore.app.models;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -17,15 +19,22 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
+    @Column(unique = true)
+    private String email;
+
     private String name;
     private String password;
+
+    @CreationTimestamp
     private Timestamp createdAt;
     private boolean isActive = true;
 
-    @OneToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.REMOVE})
-    @JoinColumn(name = "profile_id")
-    private UserProfile userProfile;
+    @OneToOne(cascade = {CascadeType.ALL}, mappedBy = "user")
+    private UserProfile profile;
 
-    @OneToMany(mappedBy = "order_id", fetch = FetchType.LAZY)
-    private List<Order> orderList;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Order> orders = new ArrayList<>();
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Review> reviews = new ArrayList<>();
 }
