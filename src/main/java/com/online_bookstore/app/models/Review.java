@@ -7,7 +7,14 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Data
 @Entity
-@Table(name = "reviews")
+@Table(name = "reviews",
+    uniqueConstraints = {
+            @UniqueConstraint(
+                    name = "uk_review_user_book",
+                    columnNames = {"user_id", "book_id"}
+            )
+    }
+)
 public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,4 +29,6 @@ public class Review {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    private boolean isActive = true;
 }

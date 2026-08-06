@@ -11,5 +11,6 @@ public interface ICategoryService {
     PageResponse<CategoryResponseDTO> getAllCategories(Integer page, Integer size);
     CategoryResponseDTO getCategoryById(Long id);
     Category getCategoryEntityById(Long id);
-
+    CategoryResponseDTO updateCategoryById(Long categoryId, CategoryRequestDTO dto);
+    PageResponse<CategoryResponseDTO> searchCategory(String name, Integer page, Integer size);
 }

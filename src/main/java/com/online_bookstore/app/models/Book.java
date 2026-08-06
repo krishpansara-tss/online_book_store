@@ -22,7 +22,7 @@ public class Book {
     private String ISBN;
     private Double price;
     private Long stock;
-    private Double ratings;
+    private Double ratings = 0.0;
 
     @CreationTimestamp
     private Timestamp publishedAt;
@@ -34,7 +34,13 @@ public class Book {
     @ManyToMany
     @JoinTable(name = "book_author",
         joinColumns = @JoinColumn(name = "book_id"),
-        inverseJoinColumns = @JoinColumn(name = "author_id")
+        inverseJoinColumns = @JoinColumn(name = "author_id"),
+        uniqueConstraints = {
+            @UniqueConstraint(
+                name = "uk_book_authore",
+                columnNames = {"author_id", "book_id"}
+            )
+        }
     )
     private List<Author> authors = new ArrayList<>();
 
@@ -44,4 +50,6 @@ public class Book {
 
     @OneToMany(mappedBy = "book", cascade = CascadeType.ALL)
     private List<Review> reviews = new ArrayList<>();
+
+    private boolean isActive = true;
 }

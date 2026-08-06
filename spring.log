@@ -1,0 +1,209 @@
+2026-08-05T10:16:17.925+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Starting OnlineBookstoreManagementApplication using Java 17.0.20 with PID 22000 (D:\CODING\online_book_store\target\classes started by Krish in D:\CODING\online_book_store)
+2026-08-05T10:16:17.932+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:16:18.019+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-05T10:16:18.023+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-05T10:16:19.089+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T10:16:19.213+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 8 JPA repository interfaces.
+2026-08-05T10:16:20.016+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-08-05T10:16:20.034+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:16:20.035+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:16:20.102+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2078 ms
+2026-08-05T10:16:20.366+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T10:16:20.521+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T10:16:21.120+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T10:16:21.149+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T10:16:21.383+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@369ce0b0
+2026-08-05T10:16:21.385+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T10:16:21.482+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/online_bookstore_database]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: online_bookstore_database/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T10:16:22.808+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T10:16:22.895+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:16:22.987+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T10:16:24.369+05:30  WARN 22000 --- [online_bookstore_management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T10:16:24.960+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-08-05T10:16:24.970+05:30  INFO 22000 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Started OnlineBookstoreManagementApplication in 7.775 seconds (process running for 8.565)
+2026-08-05T10:16:59.935+05:30  INFO 22000 --- [online_bookstore_management] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:16:59.936+05:30  INFO 22000 --- [online_bookstore_management] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:16:59.939+05:30  INFO 22000 --- [online_bookstore_management] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-08-05T10:17:00.221+05:30  WARN 22000 --- [online_bookstore_management] [http-nio-8081-exec-2] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: orderItemsToAdd
+2026-08-05T10:17:00.600+05:30  INFO 22000 --- [online_bookstore_management] [http-nio-8081-exec-2] c.o.a.s.implemantation.OrderService      : The Order is placed successfully having ID: 4
+2026-08-05T10:23:29.975+05:30  INFO 22000 --- [online_bookstore_management] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-05T10:23:30.028+05:30  INFO 22000 --- [online_bookstore_management] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-05T10:23:30.032+05:30  INFO 22000 --- [online_bookstore_management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:23:30.035+05:30  INFO 22000 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-05T10:23:30.039+05:30  INFO 22000 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-05T10:25:20.023+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Starting OnlineBookstoreManagementApplication using Java 17.0.20 with PID 17780 (D:\CODING\online_book_store\target\classes started by Krish in D:\CODING\online_book_store)
+2026-08-05T10:25:20.029+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:25:20.124+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-05T10:25:20.124+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-05T10:25:21.340+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T10:25:21.470+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 8 JPA repository interfaces.
+2026-08-05T10:25:22.235+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-08-05T10:25:22.267+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:25:22.268+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:25:22.371+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2246 ms
+2026-08-05T10:25:22.650+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T10:25:22.723+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T10:25:23.460+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T10:25:23.502+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T10:25:23.743+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51f9f109
+2026-08-05T10:25:23.745+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T10:25:23.839+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/online_bookstore_database]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: online_bookstore_database/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T10:25:25.326+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T10:25:25.415+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:25:25.510+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T10:25:27.095+05:30  WARN 17780 --- [online_bookstore_management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T10:25:28.004+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-08-05T10:25:28.132+05:30  INFO 17780 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Started OnlineBookstoreManagementApplication in 8.846 seconds (process running for 9.551)
+2026-08-05T10:25:32.663+05:30  INFO 17780 --- [online_bookstore_management] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:25:32.664+05:30  INFO 17780 --- [online_bookstore_management] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:25:32.668+05:30  INFO 17780 --- [online_bookstore_management] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:25:57.642+05:30  INFO 17780 --- [online_bookstore_management] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-05T10:25:57.704+05:30  INFO 17780 --- [online_bookstore_management] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-05T10:25:57.708+05:30  INFO 17780 --- [online_bookstore_management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:25:57.712+05:30  INFO 17780 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-05T10:25:57.724+05:30  INFO 17780 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-05T10:26:03.470+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Starting OnlineBookstoreManagementApplication using Java 17.0.20 with PID 6552 (D:\CODING\online_book_store\target\classes started by Krish in D:\CODING\online_book_store)
+2026-08-05T10:26:03.476+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:26:03.577+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-05T10:26:03.577+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-05T10:26:05.024+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T10:26:05.334+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 256 ms. Found 8 JPA repository interfaces.
+2026-08-05T10:26:06.617+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-08-05T10:26:06.646+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:26:06.647+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:26:06.769+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3190 ms
+2026-08-05T10:26:07.241+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T10:26:07.404+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T10:26:08.407+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T10:26:08.465+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T10:26:08.835+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18b73698
+2026-08-05T10:26:08.837+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T10:26:08.969+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/online_bookstore_database]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: online_bookstore_database/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T10:26:11.111+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T10:26:11.222+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:26:11.381+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T10:26:13.806+05:30  WARN 6552 --- [online_bookstore_management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T10:26:14.751+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-08-05T10:26:14.769+05:30  INFO 6552 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Started OnlineBookstoreManagementApplication in 12.123 seconds (process running for 12.983)
+2026-08-05T10:26:36.836+05:30  INFO 6552 --- [online_bookstore_management] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-05T10:26:36.899+05:30  INFO 6552 --- [online_bookstore_management] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-05T10:26:36.903+05:30  INFO 6552 --- [online_bookstore_management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:26:36.907+05:30  INFO 6552 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-05T10:26:36.912+05:30  INFO 6552 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-05T10:26:39.360+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Starting OnlineBookstoreManagementApplication using Java 17.0.20 with PID 14100 (D:\CODING\online_book_store\target\classes started by Krish in D:\CODING\online_book_store)
+2026-08-05T10:26:39.367+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:26:39.474+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-05T10:26:39.475+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-05T10:26:40.681+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T10:26:40.816+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 8 JPA repository interfaces.
+2026-08-05T10:26:41.561+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-08-05T10:26:41.591+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:26:41.592+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:26:41.665+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2189 ms
+2026-08-05T10:26:41.981+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T10:26:42.053+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T10:26:42.778+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T10:26:42.824+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T10:26:43.134+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65916758
+2026-08-05T10:26:43.138+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T10:26:43.226+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/online_bookstore_database]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: online_bookstore_database/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T10:26:44.746+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T10:26:44.840+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:26:44.959+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T10:26:47.033+05:30  WARN 14100 --- [online_bookstore_management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T10:26:47.727+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-08-05T10:26:47.756+05:30  INFO 14100 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Started OnlineBookstoreManagementApplication in 9.164 seconds (process running for 10.027)
+2026-08-05T10:26:53.527+05:30  INFO 14100 --- [online_bookstore_management] [http-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:26:53.528+05:30  INFO 14100 --- [online_bookstore_management] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:26:53.532+05:30  INFO 14100 --- [online_bookstore_management] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:27:26.234+05:30  INFO 14100 --- [online_bookstore_management] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-05T10:27:26.306+05:30  INFO 14100 --- [online_bookstore_management] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-05T10:27:26.312+05:30  INFO 14100 --- [online_bookstore_management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:27:26.316+05:30  INFO 14100 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-05T10:27:26.330+05:30  INFO 14100 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-05T10:27:31.376+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Starting OnlineBookstoreManagementApplication using Java 17.0.20 with PID 3400 (D:\CODING\online_book_store\target\classes started by Krish in D:\CODING\online_book_store)
+2026-08-05T10:27:31.383+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : No active profile set, falling back to 1 default profile: "default"
+2026-08-05T10:27:31.461+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-05T10:27:31.462+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-05T10:27:32.608+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-05T10:27:32.759+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 8 JPA repository interfaces.
+2026-08-05T10:27:33.496+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-08-05T10:27:33.514+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-05T10:27:33.514+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-05T10:27:33.588+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2124 ms
+2026-08-05T10:27:33.860+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-05T10:27:33.938+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-05T10:27:34.454+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-05T10:27:34.495+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-05T10:27:34.720+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7f25b392
+2026-08-05T10:27:34.722+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-05T10:27:34.808+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/online_bookstore_database]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: online_bookstore_database/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-05T10:27:36.179+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-05T10:27:36.263+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:27:36.373+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-08-05T10:27:37.839+05:30  WARN 3400 --- [online_bookstore_management] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-05T10:27:38.383+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-08-05T10:27:38.391+05:30  INFO 3400 --- [online_bookstore_management] [restartedMain] o.a.OnlineBookstoreManagementApplication : Started OnlineBookstoreManagementApplication in 7.683 seconds (process running for 8.419)
+2026-08-05T10:29:37.589+05:30  INFO 3400 --- [online_bookstore_management] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-05T10:29:37.590+05:30  INFO 3400 --- [online_bookstore_management] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-05T10:29:37.593+05:30  INFO 3400 --- [online_bookstore_management] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-05T10:55:05.027+05:30  INFO 3400 --- [online_bookstore_management] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-08-05T10:55:05.116+05:30  INFO 3400 --- [online_bookstore_management] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-08-05T10:55:05.123+05:30  INFO 3400 --- [online_bookstore_management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-05T10:55:05.130+05:30  INFO 3400 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-05T10:55:05.150+05:30  INFO 3400 --- [online_bookstore_management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

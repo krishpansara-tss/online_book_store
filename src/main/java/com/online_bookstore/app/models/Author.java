@@ -15,6 +15,7 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long authorId;
     private String name;
+    private boolean isActive = true;
 
     @ManyToMany(mappedBy = "authors")
     private List<Book> writtenBooks;

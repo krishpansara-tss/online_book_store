@@ -1,13 +1,22 @@
 package com.online_bookstore.app.services.interfaces;
 
 import com.online_bookstore.app.dtos.PageResponse;
-import com.online_bookstore.app.dtos.books.BookRequestDTO;
-import com.online_bookstore.app.dtos.books.BookResponseDTO;
-import com.online_bookstore.app.dtos.users.UserRequestDTO;
-import com.online_bookstore.app.dtos.users.UserResponseDTO;
+import com.online_bookstore.app.dtos.books.*;
+import com.online_bookstore.app.models.Book;
 
 public interface IBookService {
     BookResponseDTO addNewBook(BookRequestDTO dto);
-    PageResponse<BookResponseDTO> getAllBooks(Integer page, Integer size);
     BookResponseDTO getBookById(Long bookId);
+    BookResponseDTO updateBook(Long bookId, BookUpdateDTO dto);
+
+    Book getBookEntityById(Long bookId);
+
+    void deleteBook(Long bookId);
+    void activeBook(Long bookId);
+    void addStockByBookObj(Book book, Long quantity);
+    void addStock(Long bookId, UpdateBookStockDTO dto);
+
+    PageResponse<BookBasicInformationResponseDTO> getAllBooks(Integer page, Integer size,  String sortBy, String  direction);
+    PageResponse<BookResponseDTO> searchBooks(BookSearchRequestDTO dto, Integer page, Integer size);
+    PageResponse<BookBasicInformationResponseDTO> getAllActiveBooks(Integer page, Integer size,  String sortBy, String  direction);
 }
