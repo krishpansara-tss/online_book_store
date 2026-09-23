@@ -11,6 +11,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/app/users")
@@ -20,7 +23,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<UserResponseDTO> registerUser(@Valid @RequestBody UserRequestDTO dto){
         UserResponseDTO user = userService.registerUser(dto);
-
+        Map<Integer, String> idMap = new HashMap<> ();
         return new ResponseEntity<>(user, HttpStatus.CREATED);
     }
 
@@ -32,6 +35,14 @@ public class UserController {
         PageResponse<UserBasicInformationResponseDTO> users = userService.getAllUsers(page, size, sortBy, direction);
 
         return new ResponseEntity<>(users, HttpStatus.OK);
+    }
+
+    @GetMapping("/verify-user/email")
+    public ResponseEntity<Void> verifyUserEmailByOtp(@RequestParam(required = true) String email,
+                                                     @RequestParam(required = true) String otp){
+        userService.verifyEmailViaOtp(email, otp);
+
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @GetMapping("/{user_id}")

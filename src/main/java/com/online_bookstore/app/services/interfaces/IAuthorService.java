@@ -18,4 +18,6 @@ public interface IAuthorService {
     void deleteAuthor(Long authorId);
     void activeAuthor(Long authorId);
     AuthorResponseDTO updateAuthorById(Long authorId, AuthorRequestDTO dto);
+
+    List<AuthorResponseDTO> getAllAuthorsList();
 }

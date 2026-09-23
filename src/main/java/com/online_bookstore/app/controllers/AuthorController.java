@@ -10,9 +10,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/app/authors")
+@CrossOrigin(origins = "http://localhost:4200")
 public class AuthorController {
     private final AuthorService authorService;
 
@@ -23,13 +26,19 @@ public class AuthorController {
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/all/page")
     public ResponseEntity<PageResponse<AuthorResponseDTO>> getAllAuthor(@RequestParam(defaultValue = "0") Integer page,
                                                                         @RequestParam(defaultValue = "5") Integer size,
                                                                         @RequestParam(defaultValue = "name") String sortBy,
                                                                         @RequestParam(defaultValue = "asc") String direction){
         PageResponse<AuthorResponseDTO> response = authorService.getAllAuthors(page, size, sortBy, direction);
 
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<AuthorResponseDTO>> getAllAuthorList(){
+        List<AuthorResponseDTO> response = authorService.getAllAuthorsList();
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 

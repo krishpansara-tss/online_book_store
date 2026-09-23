@@ -157,4 +157,13 @@ public class AuthorService implements IAuthorService {
 
         return authorMapper.toResponse(author);
     }
+
+    @Override
+    public List<AuthorResponseDTO> getAllAuthorsList() {
+        List<Author> authorPage = authorRepository.findAll();
+
+        return  authorPage.stream()
+                .map(authorMapper::toResponse).
+                toList();
+    }
 }

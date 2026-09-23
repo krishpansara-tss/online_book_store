@@ -29,6 +29,11 @@ public class User {
     private Timestamp createdAt;
     private boolean isActive = true;
 
+    private boolean isVerified = false;
+
+    @OneToMany(mappedBy = "user")
+    private List<OTP> otp;
+
     @OneToOne(cascade = {CascadeType.ALL}, mappedBy = "user")
     private UserProfile profile;
 

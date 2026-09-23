@@ -10,9 +10,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/app/categories")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CategoryController {
 
     private final CategoryService categoryService;
@@ -23,10 +26,17 @@ public class CategoryController {
         return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
-    @GetMapping("/all")
+    @GetMapping("/all/page")
     public ResponseEntity<PageResponse<CategoryResponseDTO>> getAllCategory(@RequestParam(defaultValue = "0") Integer page,
                                                                             @RequestParam(defaultValue = "5") Integer size){
         PageResponse<CategoryResponseDTO> response = categoryService.getAllCategories(page, size);
+
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<CategoryResponseDTO>> getAllCategoryList(){
+        List<CategoryResponseDTO> response = categoryService.getAllCategoriesList();
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }

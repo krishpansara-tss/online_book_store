@@ -5,6 +5,8 @@ import com.online_bookstore.app.dtos.categories.CategoryRequestDTO;
 import com.online_bookstore.app.dtos.categories.CategoryResponseDTO;
 import com.online_bookstore.app.models.Category;
 
+import java.util.List;
+
 public interface ICategoryService {
 
     CategoryResponseDTO addNewCategory(CategoryRequestDTO dto);
@@ -13,4 +15,6 @@ public interface ICategoryService {
     Category getCategoryEntityById(Long id);
     CategoryResponseDTO updateCategoryById(Long categoryId, CategoryRequestDTO dto);
     PageResponse<CategoryResponseDTO> searchCategory(String name, Integer page, Integer size);
+
+    List<CategoryResponseDTO> getAllCategoriesList();
 }

@@ -104,6 +104,16 @@ public class CategoryService implements ICategoryService {
     }
 
     @Override
+    public List<CategoryResponseDTO> getAllCategoriesList() {
+        List<Category> categoryPage = categoryRepository.findAll();
+
+        return categoryPage
+                .stream()
+                .map(categoryMapper::toResponse)
+                .toList();
+    }
+
+    @Override
     public CategoryResponseDTO updateCategoryById(Long categoryId, CategoryRequestDTO dto) {
         Category category = getCategoryEntityById(categoryId);
 

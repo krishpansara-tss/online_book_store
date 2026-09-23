@@ -10,6 +10,7 @@ import com.online_bookstore.app.exceptions.UserNotFoundException;
 import com.online_bookstore.app.mappers.UserMapper;
 import com.online_bookstore.app.models.User;
 import com.online_bookstore.app.repositories.UserRepository;
+import com.online_bookstore.app.services.interfaces.INotificationService;
 import com.online_bookstore.app.services.interfaces.IUserService;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -29,6 +30,8 @@ public class UserService implements IUserService {
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
+    private final NotificationProcessor notificationProcessor;
+
     private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
     @Override
@@ -44,8 +47,15 @@ public class UserService implements IUserService {
         }
 
         User added_user = userRepository.save(user);
+
+        notificationProcessor.sendOtp("email", added_user);
+
         logger.info("User having ID: {} added Successfully.", added_user.getUserId());
         return userMapper.toResponse(added_user);
+    }
+
+    public void verifyEmailViaOtp(String email, String otp){
+        notificationProcessor.verifyOtp("email", email, otp);
     }
 
     @Override
@@ -167,5 +177,9 @@ public class UserService implements IUserService {
         User user = userRepository.findByName(name);
 
         return userMapper.toResponse(user);
+    }
+
+    public User userEntityByEmail(String email){
+        return userRepository.findByEmailIgnoreCase(email);
     }
 }
